@@ -1,0 +1,92 @@
+<div class="motion-demos is-animating">
+   <p class="motion-demos-lead">Motion UI's built-in effects make animating your UI a snap.</p>
+   <p class="motion-demos-sublead">Click a class and watch the Yeti animate!</p>
+   <div class="row">
+      <div class="large-6 push-6 columns">
+          <img id="yeti" [src]="fullImagePath" #yeti class="wow linear">
+      </div>
+      <div class="large-6 pull-6 columns">
+         <div class="row">
+            <div class="large-6 columns">
+               <ul class="animation-list one">
+                  <li>
+                     <p><strong>Speed</strong></p>
+                     <ul class="no-bullet" data-speeds="">
+                        <li><input type="radio" name="speed" value="" id="speedNormal" checked="" (change)="setSpeed('')"><label for="speedNormal">Normal</label></li>
+                        <li><input type="radio" name="speed" value="slow" id="speedSlow" (change)="setSpeed('slow')"><label for="speedSlow">Slow</label></li>
+                        <li><input type="radio" name="speed" value="fast" id="easingFast" (change)="setSpeed('fast')"><label for="easingFast">Fast</label></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><strong>Slide</strong></p>
+                     <ul class="no-bullet">
+                        <li><a (click)="transition('slide-in-right')">slide-in-right</a></li>
+                        <li><a (click)="transition('slide-in-left')">slide-in-left</a></li>
+                        <li><a (click)="transition('slide-in-up')">slide-in-up</a></li>
+                        <li><a (click)="transition('slide-in-down')">slide-in-down</a></li>
+                        <li><a (click)="transition('slide-out-right')">slide-out-right</a></li>
+                        <li><a (click)="transition('slide-out-left')">slide-out-left</a></li>
+                        <li><a (click)="transition('slide-out-up')">slide-out-up</a></li>
+                        <li><a (click)="transition('slide-out-down')">slide-out-down</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><strong>Fade</strong></p>
+                     <ul class="no-bullet">
+                        <li><a (click)="transition('fade-in')">fade-in</a></li>
+                        <li><a (click)="transition('fade-out')">fade-out</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><strong>Spin</strong></p>
+                     <ul class="no-bullet">
+                        <li><a (click)="transition('spin-in')">spin-in</a></li>
+                        <li><a (click)="transition('spin-in-ccw')">spin-in-ccw</a></li>
+                        <li><a (click)="transition('spin-out')">spin-out</a></li>
+                        <li><a (click)="transition('spin-out-ccw')">spin-out-ccw</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="large-6 columns">
+               <ul class="animation-list two">
+                  <li>
+                     <p><strong>Easing</strong></p>
+                     <ul class="no-bullet" data-easings="">
+                        <li><input type="radio" name="easing" value="linear" id="easingLinear" (change)="setEase('linear')" checked=""><label for="easingLinear">Linear</label></li>
+                        <li><input type="radio" name="easing" value="ease-in" id="easingEase" (change)="setEase('ease-in')"><label for="easingEase">Ease</label></li>
+                        <li><input type="radio" name="easing" value="bounce-in" id="easingBounce" (change)="setEase('bounce-in')"><label for="easingBounce">Bounce</label></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><strong>Scale</strong></p>
+                     <ul class="no-bullet">
+                        <li><a (click)="transition('scale-in-up')">scale-in-up</a></li>
+                        <li><a (click)="transition('scale-in-down')">scale-in-down</a></li>
+                        <li><a (click)="transition('scale-out-up')">scale-out-up</a></li>
+                        <li><a (click)="transition('scale-out-down')">scale-out-down</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <p><strong>Hinge</strong></p>
+                     <ul class="no-bullet">
+                        <li><a (click)="transition('hinge-in-from-top')">hinge-in-from-top</a></li>
+                        <li><a (click)="transition('hinge-in-from-right')">hinge-in-from-right</a></li>
+                        <li><a (click)="transition('hinge-in-from-bottom')">hinge-in-from-bottom</a></li>
+                        <li><a (click)="transition('hinge-in-from-left')">hinge-in-from-left</a></li>
+                        <li><a (click)="transition('hinge-in-from-middle-x')">hinge-in-from-middle-x</a></li>
+                        <li><a (click)="transition('hinge-in-from-middle-y')">hinge-in-from-middle-y</a></li>
+                        <li><a (click)="transition('hinge-out-from-top')">hinge-out-from-top</a></li>
+                        <li><a (click)="transition('hinge-out-from-right')">hinge-out-from-right</a></li>
+                        <li><a (click)="transition('hinge-out-from-bottom')">hinge-out-from-bottom</a></li>
+                        <li><a (click)="transition('hinge-out-from-left')">hinge-out-from-left</a></li>
+                        <li><a (click)="transition('hinge-out-from-middle-x')">hinge-out-from-middle-x</a></li>
+                        <li><a (click)="transition('hinge-out-from-middle-y')">hinge-out-from-middle-y</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
